@@ -1,32 +1,49 @@
+/* Definición de variables globales en :root */
+:root {
+    --primary-color: darkblue;      /* Color principal para fondo de nav y h1 */
+    --secondary-color: #eee;        /* Color de fondo para aside */
+    --text-color: white;            /* Color de texto principal */
+    --link-hover-color: #ddd;       /* Color para hover de enlaces */
+    --font-size: 16px;              /* Tamaño de fuente */
+    --border-color: #000;           /* Color de bordes */
+    --image-border: 1px solid black; /* Borde para las imágenes */
+    --box-shadow: 0 0 30px gray;    /* Sombra de caja */
+}
+
+/* Aplicación de las variables globales */
 nav {
-    background-color: darkblue;
-    color: white; /* Added: text color */
+    background-color: var(--primary-color);
+    color: var(--text-color); /* Color de texto */
     padding: 10px;
 }
 
 nav a {
-    color: white; /* Text color already defined */
+    color: var(--text-color); /* Color de texto de los enlaces */
     display: block;
     padding: 20px;
 }
 
+nav a:hover {
+    color: var(--link-hover-color); /* Color de los enlaces cuando se pasa el ratón */
+}
+
 h1 {
-    color: darkblue;
-    background-color: transparent; /* Already has transparent background */
+    color: var(--primary-color);
+    background-color: transparent; /* Ya tiene fondo transparente */
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--image-border); /* Usamos la variable para el borde */
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow); /* Usamos la variable para la sombra */
 }
 
 p {
     padding: 10px;
-    background-color: transparent; /* Added: background color */
-    color: black; /* Added: text color */
+    background-color: transparent; /* Ya tiene fondo transparente */
+    color: black; /* Mantengo el color de texto como negro */
 }
 
 main {
@@ -36,10 +53,10 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid var(--border-color); /* Usamos la variable para el color del borde */
     padding: 1rem;
-    background-color: #eee; /* Background color already defined */
-    color: #333; /* Text color already defined */
+    background-color: var(--secondary-color); /* Usamos la variable para el color de fondo */
+    color: #333; /* Color de texto en el aside */
     text-align: center;
 }
 
@@ -55,6 +72,6 @@ main img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-color); /* Usamos la variable para el color del borde */
     text-align: center;
 }
