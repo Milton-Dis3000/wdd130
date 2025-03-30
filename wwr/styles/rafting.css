@@ -1,0 +1,146 @@
+/* Root variables for color scheme */
+:root {
+    --primary-color: #505033;
+    --secondary-color: #264969;
+    --accent1-color: #cfcfb4;
+    --accent2-color: #b4cde4;
+    --text-color: #333;
+    --background-color: #fff;
+    
+}
+
+/* General styles */
+body {
+    font-family: 'Merriweather', serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; 
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative; 
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(77, 75, 75, 0.6); 
+    padding: 20px;
+    font-size: 2.5em;
+    width: 100%; 
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 70%;
+    background-color: rgba(5, 31, 66, 0.632);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse; 
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px; 
+    border-radius: 5px;
+}
+
+.hero article p {
+    flex: 1;
+    margin: 0;
+    text-align: left; 
+    
+}
+
+/* History section */
+.history {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Adventure section styles */
+.adventure {
+    text-align: center;
+    padding: 20px;
+}
+
+.adventure .gallery {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.adventure img {
+    width: 180px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-media img {
+    width: 30px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
