@@ -194,16 +194,15 @@ nav a:hover {
     text-align: center;
 }
 
-
 /* ---------------- Footer ---------------- */
 footer {
-    background-color: var(--secondary-color); 
-    color: var(--accent1-color); 
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Merriweather', serif; 
+    font-family: 'Merriweather', serif;
     width: 100%;
     box-sizing: border-box;
 }
@@ -222,7 +221,7 @@ footer {
 
 .contact-link {
     text-decoration: none;
-    color: var(--accent1-color); 
+    color: var(--accent1-color);
     align-items: center;
     gap: 5px;
 }
@@ -238,22 +237,13 @@ footer {
     margin-left: 10px;
 }
 
-
-
-
-
 /* ---------------- CONTACT PAGE ---------------- */
-
-
-
-
 #contact-page {
     padding: 0;
     max-width: 100%;
     margin: 0;
 }
 
-/* ---------------- Page Title ---------------- */
 #contact-page h1 {
     color: var(--primary-color);
     text-align: center;
@@ -296,8 +286,8 @@ iframe {
     border-radius: 10px;
     margin-top: 20px;
     transition: box-shadow 0.3s ease;
-    max-width: 100%; 
-    box-sizing: border-box; 
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 iframe:hover {
@@ -331,11 +321,11 @@ iframe:hover {
     transition: transform 0.3s ease;
 }
 
-employee-profile img:hover {
+.employee-profile img:hover {
     transform: scale(1.1);
 }
 
-employee-profile h3 {
+.employee-profile h3 {
     color: var(--primary-color);
     font-size: 1.2em;
     text-align: center;
@@ -424,4 +414,447 @@ employee-profile h3 {
 #contact-form .button:hover {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
+}
+
+/* ---------------- HOME PAGE ---------------- */
+/* Hero Section */
+.home-hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.home-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.home-hero-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.home-hero-paragraph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgb(106, 133, 43);
+    border-radius: 5px;
+}
+
+.book-now-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book-now-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 250px;
+    padding: 50px 120px;
+}
+
+.gallery figure {
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #d4d64c;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery .image-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.home-gallery-caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+}
+
+.home-gallery-caption .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.home-gallery-caption .icon {
+    width: 80px;
+    height: 80px;
+    fill: var(--secondary-color);
+    position: relative;
+    z-index: 1;
+}
+
+/* Content Section */
+.content-section {
+    position: relative;
+    background-color: var(--accent1-color);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section img {
+    width: 65%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+    margin-right: 10%;
+}
+
+.content-box {
+    position: absolute;
+    right: 5%;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 40px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateY(20px);
+    font-family: 'Merriweather', serif;
+}
+
+.content-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content-box p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.join-us-button {
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-us-button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* button to trips */
+.cta-trips {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--accent1-color);
+}
+
+.trips-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.trips-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Newsletter Section */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 0.5px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#newsletter-name,
+#newsletter-email {
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#newsletter-name:focus,
+#newsletter-email:focus {
+    border-color: var(--primary-color);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ---------- TRIPS PAGE ---------- */
+.trips-page .trip-hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.trips-page .trip-hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.trips-page .trip-hero-title,
+.trips-page .trip-hero-subtitle {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.trips-page .trip-hero-title {
+    top: 30%;
+    left: 0;
+    transform: none;
+    font-size: 2.1em;
+    font-weight: bold;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0;
+}
+
+.trips-page .trip-hero-subtitle {
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4em;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.trips-page .trip-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.trips-page .trip-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.trips-page .trip-item:hover {
+    transform: translateY(-5px);
+}
+
+.trips-page .trip-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.trips-page .trip-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trips-page .trip-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.trips-page .trip-details p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.trips-page .trip-offer {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.trips-page .book-trip-button {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+.trips-page .book-trip-button:hover {
+    background-color: #3b3b27;
+}
+
+/* Prices table */
+.trip-prices {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trip-prices h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.prices-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Merriweather', serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prices-table th,
+.prices-table td {
+    border: 1px solid var(--accent2-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.prices-table th {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-transform: uppercase;
+}
+
+.prices-table tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+.prices-table tr:hover {
+    background-color: #e6eef5;
+}
+
+.prices-table td:first-child {
+    font-weight: bold;
+}
+
+.back-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+}
+
+.back-home-button:hover {
+    background-color: var(--secondary-color);
 }
